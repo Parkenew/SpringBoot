@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html layout:decorate="~{layout}">
+<div layout:fragment="content" class="container my-3">
+<!--<head>-->
+<!--    <title>Student List</title>-->
+<!--    <style>-->
+<!--        table {-->
+<!--            width: 50%;-->
+<!--            border-collapse: collapse;-->
+<!--        }-->
+<!--        th, td {-->
+<!--            border: 2px solid black;-->
+<!--            padding: 10px;-->
+<!--            text-align: left;-->
+<!--        }-->
+<!--        th {-->
+<!--            background-color: #f2f2f2;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--<link rel="stylesheet" type="text/css" th:href="@{/bootstrap.min.css}">-->
+<h2>Student List</h2>
+<table class="table">
+    <thead class="table-dark">
+    <tr>
+        <th>학번</th>
+        <th>이메일</th>
+        <th>국어</th>
+        <th>영어</th>
+        <th>수학</th>
+        <th>사회</th>
+        <th>과학</th>
+        <th>총점</th>
+        <th>MgrCode</th>
+        <th>AccCode</th>
+        <th>locCode</th>
+        <!-- 다른 속성들을 필요에 따라 추가 -->
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>
+            <a th:text="${student.StdNo}" ></a>
+        </td>
+        <td>
+            <a th:text="${student.email}" ></a>
+        </td>
+        <td>
+            <a th:text="${student.kor}" ></a>
+        </td>
+        <td>
+            <a th:text="${student.eng}" ></a>
+        </td>
+        <td>
+            <a th:text="${student.math}" ></a>
+        </td>
+        <td>
+            <a th:text="${student.hist}" ></a>
+        </td>
+        <td>
+            <a th:text="${student.sci}" ></a>
+        </td>
+        <td>
+            <a th:text="${student.total}" ></a>
+        </td>
+        <td>
+            <a th:text="${student.mgrCode}" ></a>
+        </td>
+        <td>
+            <a th:text="${student.locCode}" ></a>
+        </td>
+        <td>
+            <a th:text="${student.accCode}" ></a>
+        </td>
+        <!--<td th:text="${student.email}"></td>
+         다른 속성들을 필요에 따라 추가 -->
+    </tr>
+    </tbody>
+</table>
+<div class="btn-primary">
+
+</div>
+</div>
+<!--</body>-->
+</html>
